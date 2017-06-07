@@ -18,6 +18,10 @@ module.exports = {
     // add your custom rules here
     'rules': {
         "indent": ["error", 4],
+        // enforce double quoted strings
+        "quotes": [1, "double"],
+        // enforce semicolon usage
+        "semi": [1, "always"],
         // allow paren-less arrow functions
         'arrow-parens': 0,
         // allow async-await
