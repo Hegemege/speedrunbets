@@ -4,14 +4,7 @@ var app = express();
 // Announce all api routes
 
 app.get("/api", function (req, res) {
-    res.end(
-        `
-            <p>Available routes:</p>
-            <ul>
-                <li>/api/hello</li>
-            </ul>
-        `
-    );
+    res.end("SpeedRunBets API");
 });
 
 // API routes

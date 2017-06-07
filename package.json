@@ -1,8 +1,8 @@
 {
   "name": "speedrunbets",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "Henri Niva <henri.niva@aalto.fi>",
+  "description": "Speedrun betting site",
+  "author": "Henri Niva <hegemege@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "concurrently --kill-others \"npm run dev-static\" \"npm run dev-api\"",
