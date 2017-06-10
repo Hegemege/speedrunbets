@@ -3,11 +3,6 @@ var app = express();
 
 var db = require("./db.js");
 
-// Hot reloading
-if (process.env.NODE_ENV !== "production") {
-
-}
-
 // Announce all api routes
 
 app.get("/api", function (req, res) {
@@ -16,7 +11,7 @@ app.get("/api", function (req, res) {
 
 // API routes
 
-app.get("/api/hello", function (req, res) {
+app.get("/api/games", function (req, res) {
     var resultRows = [];
 
     db.connection.query(

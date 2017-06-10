@@ -26,7 +26,8 @@ export default {
         "navbar": Navbar
     },
     created: function () {
-        this.$http.get("/api/hello").then(response => {
+        // TEMP: just to test db connection
+        this.$http.get("/api/games").then(response => {
             this.$data.gameData = response.body;
         }, error => {
             throw error;
