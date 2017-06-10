@@ -2,13 +2,13 @@
     <div class="races-container">
     Live Races
     <div id="races" class="races">
-	<div class="game">
+        <div class="game">
 	</div>
-	<div class="game">
+        <div class="game">
 	</div>
-	<div class="game">
+        <div class="game">
 	</div>
-	<div class="game">
+        <div class="game">
 	</div>
     </div>
   </div>  
