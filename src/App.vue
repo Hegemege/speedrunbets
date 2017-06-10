@@ -1,8 +1,13 @@
 <template>
     <div id="app">
         <navbar></navbar>
-        <div id="content">
+        <div class="content">
             <router-view></router-view>
+        </div>
+        <div class="content">
+            <p v-for="game in gameData">
+                {{ game.Id }} - {{ game.Name }} - {{ game.Description }}
+            </p>
         </div>
     </div>
 </template>
@@ -14,11 +19,18 @@ export default {
     name: "app",
     data () {
         return {
-            msg: "Welcome to Your Vue.js App"
+            gameData: []
         };
     },
     components: { // Encapsulated in it's own Navbar.vue file
         "navbar": Navbar
+    },
+    created: function () {
+        this.$http.get("/api/hello").then(response => {
+            this.$data.gameData = response.body;
+        }, error => {
+            throw error;
+        });
     }
 };
 </script>
@@ -37,7 +49,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-#content {
+.content {
     margin-left: $content-margins-full;
     margin-right: $content-margins-full;
     background-color: lightblue;
@@ -45,7 +57,7 @@ body {
 
 /* Medium screens */
 @media all and (max-width: 1200px) {
-    #content {
+    .content {
         margin-left: 0;
         margin-right: 0;
     }
