@@ -1,16 +1,21 @@
 <template>
     <div class="home">
         <h1>Home page</h1>
+	<races></races>
     </div>
 </template>
 
 <script>
+import Races from "./Races.vue";
 export default {
     name: "home",
     data () {
         return {
             msg: "Welcome to Your Vue.js App"
         };
+    },
+    components: { // Encapsulated in it's own Races.vue file
+        "races": Races
     }
 };
 </script>
