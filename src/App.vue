@@ -1,7 +1,9 @@
 <template>
     <div id="app">
         <navbar></navbar>
-        <router-view></router-view>
+        <div id="content">
+            <router-view></router-view>
+        </div>
     </div>
 </template>
 
@@ -34,4 +36,19 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+#content {
+    margin-left: $content-margins-full;
+    margin-right: $content-margins-full;
+    background-color: lightblue;
+}
+
+/* Medium screens */
+@media all and (max-width: 1200px) {
+    #content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 </style>
