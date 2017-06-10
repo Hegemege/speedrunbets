@@ -63,28 +63,4 @@ html {
   margin: 15px;
   background-color: black;
 }
-.thumbnail{
-  width: 110px;
-  height: 160px;
-  margin: 2px;
-  border-style: solid;
-  border-width: thin;
-}
-.entrants{
-  width: 140px;
-  height: 160px;
-  float: right;
-  position: relative;
-  top: -163px;
-  left: -20px;
-  border-style: solid;
-  border-width: thin;
-}
-.details{
-  width:280px;
-  height:60px;
-  margin: 9px;
-  border-style: solid;
-  border-width: thin;
-}
 </style>
